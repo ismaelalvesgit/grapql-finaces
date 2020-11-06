@@ -15,7 +15,7 @@ A API foi criada para um Gerenciador de Finanças Pessoais e usa as seguintes te
 * PostgreSQL
 * Docker (Compose e Machine)
 * Prisma Server
-
+* Dotenv
 ## Screenshots
 
 app view:
