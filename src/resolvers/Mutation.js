@@ -1,8 +1,9 @@
+// @Author ismael alves
+
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 const moment = require('moment')
 const { getUserId } = require('./../utils')
-
 const JWT_SECRET = process.env.JWT_SECRET
 
 function createAccount (_, { description }, ctx, info) {

@@ -1,3 +1,4 @@
+// @Author ismael alves
 const jwt = require('jsonwebtoken')
 
 function getUserId (context) {

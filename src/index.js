@@ -1,7 +1,7 @@
+// @Author ismael alves
 const { GraphQLServer } = require('graphql-yoga')
 const Binding = require('prisma-binding')
 const { prisma } = require('./generated/prisma-client')
-
 const { endpoint, origin, playground, secret } = require('./config')
 const resolvers = require('./resolvers')
 

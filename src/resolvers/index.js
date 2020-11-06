@@ -1,3 +1,4 @@
+// @Author ismael alves
 const Query = require('./Query')
 const Mutation = require('./Mutation')
 
