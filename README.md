@@ -1,6 +1,6 @@
 # Grapql Finances
 
-API GraphQL desenvolvida para afins de projeto piloto em API [GraphQL](https://graphql.org/).
+API GraphQL desenvolvida para afins de ser projeto piloto em API [GraphQL](https://graphql.org/).
 
 A API foi criada para um Gerenciador de Finanças Pessoais e usa as seguintes tecnologias e recursos:
 
