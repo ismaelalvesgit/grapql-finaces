@@ -58,7 +58,7 @@ Verifique [Configurações e Referencias](https://www.prisma.io/).
 
 ## Contato
 
-Desenvolvido por: [Plínio Naves](https://www.udemy.com/user/plinio-naves/)
+Desenvolvido por: [Ismael Alves](https://github.com/ismaelalvesgit)
 
 * Email: [cearaismael1997@gmail.com](mailto:cearaismael1997@gmail.com) 
 * Github: [github.com/ismaelalvesgit](https://github.com/ismaelalvesgit)
