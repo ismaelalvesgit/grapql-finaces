@@ -1,4 +1,4 @@
-# Grapql Finances - @Author Ismael Alves <cearaismael1997@gmail.com>
+# Grapql Finances
 
 API GraphQL desenvolvida no curso [Vue JS - Guia Completo (Vue CLI, Vue Router, Vuex e GraphQL)](https://www.udemy.com/course/vue-js-guia-completo/?couponCode=VUE_GITHUB) disponível na Udemy.com.
 
