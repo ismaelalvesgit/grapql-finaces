@@ -1,0 +1,31 @@
+{
+  "name": "grapql-finances",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx pm2-runtime src/index.js",
+    "dev": "npx nodemon --delay 1000ms --ext js,graphql src/index",
+    "prisma:generate": "npx prisma generate",
+    "prisma:deploy": "npx prisma deploy",
+    "docker:build": "docker build -t backend .",
+    "docker:run": "docker run -d  -p 80:80 --name backend --network backend_default backend",
+    "docker:down": "docker stop backend",
+    "docker:remove": "docker container rm backend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "dotenv": "^8.2.0",
+    "graphql-yoga": "^1.18.3",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "prisma-binding": "^2.3.16",
+    "prisma-client-lib": "^1.34.10"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}

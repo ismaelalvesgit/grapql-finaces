@@ -1,0 +1,52 @@
+version: '3'
+
+services:
+
+  prisma:
+    image: prismagraphql/prisma:1.27
+    container_name: prisma
+    restart: always
+    ports:
+    - "4466:4466"
+    environment:
+      PRISMA_CONFIG: |
+        port: 4466
+        managementApiSecret: ${PRISMA_MANAGEMENT_API_SECRET}
+        databases:
+          default:
+            connector: postgres
+            host: postgres
+            port: 5432
+            user: prisma
+            password: prisma
+            database: prisma
+            migrations: true
+            rawAccess: true
+
+  pgadmin4:
+    image: dpage/pgadmin4
+    container_name: pgadmin4
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "prisma@prisma.com"
+      PGADMIN_DEFAULT_PASSWORD: "prisma"
+    ports:
+      - "8080:80"
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:10.3
+    container_name: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: prisma
+      POSTGRES_PASSWORD: prisma
+      POSTGRES_DB: prisma
+    volumes:
+      - postgres:/var/lib/postgresql/data
+
+volumes:
+  postgres:
