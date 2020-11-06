@@ -1,7 +1,6 @@
 # Grapql Finances
 
-API GraphQL desenvolvida no curso [Vue JS - Guia Completo (Vue CLI, Vue Router, Vuex e GraphQL)](https://www.udemy.com/course/vue-js-guia-completo/?couponCode=VUE_GITHUB) disponível na Udemy.com.
-
+API GraphQL desenvolvida para afins de projeto piloto em API [GraphQL](https://graphql.org/).
 
 A API foi criada para um Gerenciador de Finanças Pessoais e usa as seguintes tecnologias e recursos:
 
